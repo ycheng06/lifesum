@@ -8,17 +8,52 @@
 
 import UIKit
 import CoreData
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    
+    
+   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print(self.applicationDocumentsDirectory)
+    
+        // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = UIColor(red: 231.0/255.0, green: 95.0/255.0, blue:53.0/255.0, alpha: 0.3)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
+        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 22.0) {
+            UINavigationBar.appearance().titleTextAttributes =
+                [NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:barFont]
+        }
+        
+        // Change status bar into light color
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+    
         return true
     }
+    
+    // call back function for savecontext. to support multithreading merging
+    func didSaveContext(notification: NSNotification) {
+        let sender = notification.object as! NSManagedObjectContext
+
+        print("waweifoj@($($)")
+        // merge changes with child moc
+        if sender.persistentStoreCoordinator == self.managedObjectContext.persistentStoreCoordinator {
+            if sender != self.managedObjectContext {
+                self.managedObjectContext.performBlock {
+                    self.managedObjectContext.mergeChangesFromContextDidSaveNotification(notification)
+                }
+            }
+        }
+    }
+    
+
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -62,7 +97,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData.sqlite")
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("lifesum.sqlite")
         var failureReason = "There was an error creating or loading the application's saved data."
         do {
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)

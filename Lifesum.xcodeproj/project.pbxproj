@@ -15,6 +15,23 @@
 		965CEDB81C74FA3E00A7C299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965CEDB61C74FA3E00A7C299 /* LaunchScreen.storyboard */; };
 		965CEDC31C74FA3F00A7C299 /* LifesumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDC21C74FA3F00A7C299 /* LifesumTests.swift */; };
 		965CEDCE1C74FA3F00A7C299 /* LifesumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDCD1C74FA3F00A7C299 /* LifesumUITests.swift */; };
+		965CEDDD1C74FEA300A7C299 /* exercisesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 965CEDDC1C74FEA300A7C299 /* exercisesStatic.json */; };
+		965CEDE01C7504F300A7C299 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDDF1C7504F300A7C299 /* Exercise.swift */; };
+		965CEDE21C751E6E00A7C299 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDE11C751E6E00A7C299 /* Category.swift */; };
+		965CEDE41C751EE800A7C299 /* categoriesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 965CEDE31C751EE800A7C299 /* categoriesStatic.json */; };
+		965CEDE61C753BF400A7C299 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDE51C753BF400A7C299 /* Food.swift */; };
+		965CEDEA1C754C3600A7C299 /* foodStaticTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 965CEDE91C754C3600A7C299 /* foodStaticTest.json */; };
+		965CEDEC1C754DDE00A7C299 /* foodStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 965CEDEB1C754DDE00A7C299 /* foodStatic.json */; };
+		965CEDEE1C764DBE00A7C299 /* LoadFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDED1C764DBE00A7C299 /* LoadFromJSON.swift */; };
+		965CEDF01C7667D800A7C299 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDEF1C7667D800A7C299 /* ExerciseTableViewController.swift */; };
+		965CEDF21C76776E00A7C299 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDF11C76776E00A7C299 /* ExerciseTableViewCell.swift */; };
+		965CEDF61C768DD200A7C299 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDF51C768DD200A7C299 /* CategoryTableViewCell.swift */; };
+		965CEDF81C768E1700A7C299 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDF71C768E1700A7C299 /* CategoryTableViewController.swift */; };
+		965CEDFA1C76908D00A7C299 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDF91C76908D00A7C299 /* FoodTableViewController.swift */; };
+		965CEDFC1C769DAE00A7C299 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDFB1C769DAE00A7C299 /* FoodTableViewCell.swift */; };
+		965CEDFE1C76AA7700A7C299 /* NutrientDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDFD1C76AA7700A7C299 /* NutrientDetailTableViewController.swift */; };
+		965CEE001C76AAA100A7C299 /* NutrientDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CEDFF1C76AAA100A7C299 /* NutrientDetailTableViewCell.swift */; };
+		C5A32F94AFFEB04A66EA2307 /* Pods_Lifesum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ABCD2A6F58ED3AA0A06F5C /* Pods_Lifesum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D2BA64D80EFF372CC195A8C /* Pods-Lifesum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifesum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lifesum/Pods-Lifesum.debug.xcconfig"; sourceTree = "<group>"; };
+		5D06AA9154FEBD39432FDC3F /* Pods-Lifesum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifesum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lifesum/Pods-Lifesum.release.xcconfig"; sourceTree = "<group>"; };
 		965CEDA71C74FA3E00A7C299 /* Lifesum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifesum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965CEDAA1C74FA3E00A7C299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965CEDAC1C74FA3E00A7C299 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +68,23 @@
 		965CEDC91C74FA3F00A7C299 /* LifesumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifesumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965CEDCD1C74FA3F00A7C299 /* LifesumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumUITests.swift; sourceTree = "<group>"; };
 		965CEDCF1C74FA3F00A7C299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965CEDDC1C74FEA300A7C299 /* exercisesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercisesStatic.json; sourceTree = "<group>"; };
+		965CEDDF1C7504F300A7C299 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		965CEDE11C751E6E00A7C299 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		965CEDE31C751EE800A7C299 /* categoriesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categoriesStatic.json; sourceTree = "<group>"; };
+		965CEDE51C753BF400A7C299 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		965CEDE91C754C3600A7C299 /* foodStaticTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodStaticTest.json; sourceTree = "<group>"; };
+		965CEDEB1C754DDE00A7C299 /* foodStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodStatic.json; sourceTree = "<group>"; };
+		965CEDED1C764DBE00A7C299 /* LoadFromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadFromJSON.swift; sourceTree = "<group>"; };
+		965CEDEF1C7667D800A7C299 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		965CEDF11C76776E00A7C299 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		965CEDF51C768DD200A7C299 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		965CEDF71C768E1700A7C299 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		965CEDF91C76908D00A7C299 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
+		965CEDFB1C769DAE00A7C299 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		965CEDFD1C76AA7700A7C299 /* NutrientDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutrientDetailTableViewController.swift; sourceTree = "<group>"; };
+		965CEDFF1C76AAA100A7C299 /* NutrientDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutrientDetailTableViewCell.swift; sourceTree = "<group>"; };
+		C7ABCD2A6F58ED3AA0A06F5C /* Pods_Lifesum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lifesum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A32F94AFFEB04A66EA2307 /* Pods_Lifesum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +120,8 @@
 				965CEDC11C74FA3F00A7C299 /* LifesumTests */,
 				965CEDCC1C74FA3F00A7C299 /* LifesumUITests */,
 				965CEDA81C74FA3E00A7C299 /* Products */,
+				DD16002027161022117EB37B /* Pods */,
+				A38E773FF760D834014474E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +138,23 @@
 		965CEDA91C74FA3E00A7C299 /* Lifesum */ = {
 			isa = PBXGroup;
 			children = (
+				965CEDDE1C7504D000A7C299 /* Data */,
+				965CEDDB1C74FD1800A7C299 /* StaticData */,
 				965CEDAA1C74FA3E00A7C299 /* AppDelegate.swift */,
 				965CEDAC1C74FA3E00A7C299 /* ViewController.swift */,
 				965CEDAE1C74FA3E00A7C299 /* Main.storyboard */,
 				965CEDB41C74FA3E00A7C299 /* Assets.xcassets */,
 				965CEDB61C74FA3E00A7C299 /* LaunchScreen.storyboard */,
 				965CEDB91C74FA3E00A7C299 /* Info.plist */,
-				965CEDB11C74FA3E00A7C299 /* Lifesum.xcdatamodeld */,
+				965CEDED1C764DBE00A7C299 /* LoadFromJSON.swift */,
+				965CEDEF1C7667D800A7C299 /* ExerciseTableViewController.swift */,
+				965CEDF11C76776E00A7C299 /* ExerciseTableViewCell.swift */,
+				965CEDF51C768DD200A7C299 /* CategoryTableViewCell.swift */,
+				965CEDF71C768E1700A7C299 /* CategoryTableViewController.swift */,
+				965CEDF91C76908D00A7C299 /* FoodTableViewController.swift */,
+				965CEDFB1C769DAE00A7C299 /* FoodTableViewCell.swift */,
+				965CEDFD1C76AA7700A7C299 /* NutrientDetailTableViewController.swift */,
+				965CEDFF1C76AAA100A7C299 /* NutrientDetailTableViewCell.swift */,
 			);
 			path = Lifesum;
 			sourceTree = "<group>";
@@ -128,6 +177,45 @@
 			path = LifesumUITests;
 			sourceTree = "<group>";
 		};
+		965CEDDB1C74FD1800A7C299 /* StaticData */ = {
+			isa = PBXGroup;
+			children = (
+				965CEDE31C751EE800A7C299 /* categoriesStatic.json */,
+				965CEDE91C754C3600A7C299 /* foodStaticTest.json */,
+				965CEDEB1C754DDE00A7C299 /* foodStatic.json */,
+				965CEDDC1C74FEA300A7C299 /* exercisesStatic.json */,
+			);
+			name = StaticData;
+			sourceTree = "<group>";
+		};
+		965CEDDE1C7504D000A7C299 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				965CEDB11C74FA3E00A7C299 /* Lifesum.xcdatamodeld */,
+				965CEDDF1C7504F300A7C299 /* Exercise.swift */,
+				965CEDE11C751E6E00A7C299 /* Category.swift */,
+				965CEDE51C753BF400A7C299 /* Food.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		A38E773FF760D834014474E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7ABCD2A6F58ED3AA0A06F5C /* Pods_Lifesum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD16002027161022117EB37B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D2BA64D80EFF372CC195A8C /* Pods-Lifesum.debug.xcconfig */,
+				5D06AA9154FEBD39432FDC3F /* Pods-Lifesum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 965CEDD21C74FA3F00A7C299 /* Build configuration list for PBXNativeTarget "Lifesum" */;
 			buildPhases = (
+				957282B2DEE34C3482DC74AF /* Check Pods Manifest.lock */,
 				965CEDA31C74FA3E00A7C299 /* Sources */,
 				965CEDA41C74FA3E00A7C299 /* Frameworks */,
 				965CEDA51C74FA3E00A7C299 /* Resources */,
+				93E4ECA3343B3B4741896E3B /* Embed Pods Frameworks */,
+				9D2A22E67FCE8EC5DB37D629 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,8 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				965CEDB81C74FA3E00A7C299 /* LaunchScreen.storyboard in Resources */,
+				965CEDEA1C754C3600A7C299 /* foodStaticTest.json in Resources */,
 				965CEDB51C74FA3E00A7C299 /* Assets.xcassets in Resources */,
 				965CEDB01C74FA3E00A7C299 /* Main.storyboard in Resources */,
+				965CEDDD1C74FEA300A7C299 /* exercisesStatic.json in Resources */,
+				965CEDE41C751EE800A7C299 /* categoriesStatic.json in Resources */,
+				965CEDEC1C754DDE00A7C299 /* foodStatic.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +349,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		93E4ECA3343B3B4741896E3B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lifesum/Pods-Lifesum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		957282B2DEE34C3482DC74AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D2A22E67FCE8EC5DB37D629 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lifesum/Pods-Lifesum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		965CEDA31C74FA3E00A7C299 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				965CEDAD1C74FA3E00A7C299 /* ViewController.swift in Sources */,
+				965CEDF01C7667D800A7C299 /* ExerciseTableViewController.swift in Sources */,
+				965CEDEE1C764DBE00A7C299 /* LoadFromJSON.swift in Sources */,
+				965CEDFC1C769DAE00A7C299 /* FoodTableViewCell.swift in Sources */,
+				965CEDE21C751E6E00A7C299 /* Category.swift in Sources */,
+				965CEE001C76AAA100A7C299 /* NutrientDetailTableViewCell.swift in Sources */,
+				965CEDE01C7504F300A7C299 /* Exercise.swift in Sources */,
 				965CEDAB1C74FA3E00A7C299 /* AppDelegate.swift in Sources */,
+				965CEDF61C768DD200A7C299 /* CategoryTableViewCell.swift in Sources */,
+				965CEDFA1C76908D00A7C299 /* FoodTableViewController.swift in Sources */,
+				965CEDFE1C76AA7700A7C299 /* NutrientDetailTableViewController.swift in Sources */,
+				965CEDF21C76776E00A7C299 /* ExerciseTableViewCell.swift in Sources */,
 				965CEDB31C74FA3E00A7C299 /* Lifesum.xcdatamodeld in Sources */,
+				965CEDE61C753BF400A7C299 /* Food.swift in Sources */,
+				965CEDF81C768E1700A7C299 /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +554,7 @@
 		};
 		965CEDD31C74FA3F00A7C299 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D2BA64D80EFF372CC195A8C /* Pods-Lifesum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lifesum/Info.plist;
@@ -410,6 +566,7 @@
 		};
 		965CEDD41C74FA3F00A7C299 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D06AA9154FEBD39432FDC3F /* Pods-Lifesum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lifesum/Info.plist;
@@ -486,6 +643,7 @@
 				965CEDD41C74FA3F00A7C299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		965CEDD51C74FA3F00A7C299 /* Build configuration list for PBXNativeTarget "LifesumTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +652,7 @@
 				965CEDD71C74FA3F00A7C299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		965CEDD81C74FA3F00A7C299 /* Build configuration list for PBXNativeTarget "LifesumUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +661,7 @@
 				965CEDDA1C74FA3F00A7C299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
