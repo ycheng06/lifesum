@@ -18,29 +18,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzB-hs-Fu1">
-                                <rect key="frame" x="85" y="269" width="46" height="41"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="PZB-Lg-qf0" kind="modal" id="oq2-WJ-k47"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-MD-3ah">
-                                <rect key="frame" x="139" y="174" width="32" height="30"/>
-                                <state key="normal" title="food"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icons from freepik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-3z-yqe">
+                                <rect key="frame" x="109" y="501" width="103" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-MD-3ah">
+                                <rect key="frame" x="74" y="127" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Xik-Qr-5IF"/>
+                                    <constraint firstAttribute="width" constant="160" id="zxM-2I-Mb2"/>
+                                </constraints>
+                                <state key="normal" title="food" image="food"/>
                                 <connections>
                                     <segue destination="mF4-kA-ltP" kind="modal" id="Erz-xF-mSf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifesum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JA-xx-kj1">
+                                <rect key="frame" x="92" y="34" width="137" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.97536375661375663" green="0.38364604580454587" blue="0.024372518428163847" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzB-hs-Fu1">
+                                <rect key="frame" x="80" y="320" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="MbY-oc-cJX"/>
+                                    <constraint firstAttribute="height" constant="160" id="OmO-mO-5Yp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="exercise" backgroundImage="exercise"/>
+                                <state key="disabled" image="exerciseLoading"/>
+                                <state key="selected" image="exercise"/>
+                                <state key="highlighted" image="exercise"/>
+                                <state key="focused" image="exercise"/>
+                                <connections>
+                                    <segue destination="PZB-Lg-qf0" kind="modal" id="oq2-WJ-k47"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.8181533272150846" blue="0.72926132211834616" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bzB-hs-Fu1" firstAttribute="top" secondItem="gv6-MD-3ah" secondAttribute="bottom" constant="33" id="3mN-aS-VPZ"/>
+                            <constraint firstItem="gv6-MD-3ah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="9Gz-wT-3bc"/>
+                            <constraint firstItem="bzB-hs-Fu1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CtH-Vs-fuJ"/>
+                            <constraint firstItem="7JA-xx-kj1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TzE-QH-mqj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xFe-3z-yqe" secondAttribute="bottom" constant="8" id="acs-GH-GY0"/>
+                            <constraint firstItem="xFe-3z-yqe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pgp-fb-POe"/>
+                            <constraint firstItem="gv6-MD-3ah" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="107" id="sPY-eq-uGV"/>
+                            <constraint firstItem="7JA-xx-kj1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="tcw-Vp-gtR"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="categoryButton" destination="gv6-MD-3ah" id="jk1-WV-aTx"/>
+                        <outlet property="exerciseButton" destination="bzB-hs-Fu1" id="8a9-Yy-v3Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="177"/>
+            <point key="canvasLocation" x="-92" y="123"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="2PU-4o-Gei">
@@ -131,8 +170,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZg-NC-OUb">
-                                            <rect key="frame" x="21" y="28" width="278" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZg-NC-OUb">
+                                            <rect key="frame" x="21" y="28" width="245" height="24"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -566,4 +605,9 @@
             <point key="canvasLocation" x="430" y="-544"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="exercise" width="470" height="501"/>
+        <image name="exerciseLoading" width="470" height="501"/>
+        <image name="food" width="328" height="326"/>
+    </resources>
 </document>

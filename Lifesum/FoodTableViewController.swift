@@ -48,9 +48,9 @@ class FoodTableViewController: UITableViewController {
         // Configure the cell...
         let currentFood: Food = self.localizedFood[indexPath.row]
         cell.nameLabel.text = currentFood.title
-        cell.caloriesLabel.text = "\(currentFood.calories) cal"
+        cell.caloriesLabel.text = String(format: " %.0f", currentFood.calories) + " cal "
         cell.servingLabel.text = "1 " + currentFood.pcstext
-        cell.gramsLabel.text = String(format: " %.2f", currentFood.gramsPerServing) + " grams"
+        cell.gramsLabel.text = String(format: " %.0f", currentFood.gramsPerServing) + " grams"
 
         return cell
     }

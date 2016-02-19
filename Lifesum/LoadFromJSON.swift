@@ -71,7 +71,10 @@ class LoadFromJSON {
                                 }
                                 
                                 appDelegate.saveContext()
-                                delegate.dataLoaded?(delegateType)
+                                
+                                dispatch_async(dispatch_get_main_queue()) {
+                                    delegate.dataLoaded?(delegateType)
+                                }
                                 
                             } else { print("json file not valid. please check")}
                         } catch let error as NSError { print(error.localizedDescription)}
@@ -86,7 +89,7 @@ class LoadFromJSON {
     }
     
     // check if app launching for first time
-    private func isFirstTimeLaunch()->Bool{
+    private func isFirstTimeLaunch()->Bool {
         let defaults = NSUserDefaults.standardUserDefaults()
         let launchedOnce:Bool = defaults.boolForKey("appAlreadyLaunchedOnce")
         
