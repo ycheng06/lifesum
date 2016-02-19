@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, LoadJSONToCoreDelegate {
     
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var exerciseButton: UIButton!
     
@@ -25,7 +26,9 @@ class ViewController: UIViewController, LoadJSONToCoreDelegate {
         let launchedOnce:Bool = defaults.boolForKey("appAlreadyLaunchedOnce")
         if !launchedOnce {
             // disable buttons. wait for callback to able them
+            loadingIndicator.startAnimating()
             categoryButton.enabled = false
+            categoryButton.alpha = 0.25
             exerciseButton.enabled = false
         }
         
@@ -47,6 +50,10 @@ class ViewController: UIViewController, LoadJSONToCoreDelegate {
             print("all data loaded: " + type)
 
             categoryButton.enabled = true
+            categoryButton.alpha = 1
+            
+            loadingIndicator.stopAnimating()
+            loadingIndicator.hidden = true
         }
     }
 

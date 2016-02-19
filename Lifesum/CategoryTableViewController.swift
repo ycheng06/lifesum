@@ -11,16 +11,10 @@ import CoreData
 
 class CategoryTableViewController: UITableViewController {
     
-    private var categories: Array<Category> = []
+    private var categories: Array<Category> = [] // all the categories
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         // Fetch request
         let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
@@ -33,6 +27,8 @@ class CategoryTableViewController: UITableViewController {
             NSSortDescriptor(key: "category", ascending: true)
         ]
         
+        // headcategoryId == 15 are really weird. decided to hide them from 
+        // user
         fetchRequest.predicate = NSPredicate(format: "headCategoryId != 15")
         
         do{

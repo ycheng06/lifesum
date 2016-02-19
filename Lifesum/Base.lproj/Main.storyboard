@@ -18,29 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icons from freepik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-3z-yqe">
-                                <rect key="frame" x="109" y="501" width="103" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-MD-3ah">
-                                <rect key="frame" x="74" y="127" width="160" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="Xik-Qr-5IF"/>
-                                    <constraint firstAttribute="width" constant="160" id="zxM-2I-Mb2"/>
-                                </constraints>
-                                <state key="normal" title="food" image="food"/>
-                                <connections>
-                                    <segue destination="mF4-kA-ltP" kind="modal" id="Erz-xF-mSf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifesum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JA-xx-kj1">
-                                <rect key="frame" x="92" y="34" width="137" height="50"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
-                                <color key="textColor" red="0.97536375661375663" green="0.38364604580454587" blue="0.024372518428163847" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzB-hs-Fu1">
                                 <rect key="frame" x="80" y="320" width="160" height="160"/>
                                 <constraints>
@@ -56,15 +33,44 @@
                                     <segue destination="PZB-Lg-qf0" kind="modal" id="oq2-WJ-k47"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icons from freepik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-3z-yqe">
+                                <rect key="frame" x="109" y="501" width="103" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Rgb-G0-aEz">
+                                <rect key="frame" x="139" y="195" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifesum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JA-xx-kj1">
+                                <rect key="frame" x="92" y="34" width="137" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.97536375661375663" green="0.38364604580454587" blue="0.024372518428163847" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-MD-3ah">
+                                <rect key="frame" x="74" y="127" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Xik-Qr-5IF"/>
+                                    <constraint firstAttribute="width" constant="160" id="zxM-2I-Mb2"/>
+                                </constraints>
+                                <state key="normal" title="food" image="food"/>
+                                <connections>
+                                    <segue destination="mF4-kA-ltP" kind="modal" id="Erz-xF-mSf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.8181533272150846" blue="0.72926132211834616" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bzB-hs-Fu1" firstAttribute="top" secondItem="gv6-MD-3ah" secondAttribute="bottom" constant="33" id="3mN-aS-VPZ"/>
                             <constraint firstItem="gv6-MD-3ah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="9Gz-wT-3bc"/>
+                            <constraint firstItem="Rgb-G0-aEz" firstAttribute="leading" secondItem="gv6-MD-3ah" secondAttribute="trailing" constant="-95" id="CSL-t2-yc8"/>
                             <constraint firstItem="bzB-hs-Fu1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CtH-Vs-fuJ"/>
                             <constraint firstItem="7JA-xx-kj1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TzE-QH-mqj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xFe-3z-yqe" secondAttribute="bottom" constant="8" id="acs-GH-GY0"/>
+                            <constraint firstItem="gv6-MD-3ah" firstAttribute="top" secondItem="Rgb-G0-aEz" secondAttribute="bottom" constant="-105" id="mAC-gw-e1M"/>
                             <constraint firstItem="xFe-3z-yqe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pgp-fb-POe"/>
                             <constraint firstItem="gv6-MD-3ah" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="107" id="sPY-eq-uGV"/>
                             <constraint firstItem="7JA-xx-kj1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="tcw-Vp-gtR"/>
@@ -75,6 +81,7 @@
                     <connections>
                         <outlet property="categoryButton" destination="gv6-MD-3ah" id="jk1-WV-aTx"/>
                         <outlet property="exerciseButton" destination="bzB-hs-Fu1" id="8a9-Yy-v3Q"/>
+                        <outlet property="loadingIndicator" destination="Rgb-G0-aEz" id="Kcr-2l-IYd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -90,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" rowHeight="71" id="ZXz-O7-wdV" customClass="ExerciseTableViewCell" customModule="Lifesum" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" rowHeight="71" id="ZXz-O7-wdV" customClass="ExerciseTableViewCell" customModule="Lifesum" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZXz-O7-wdV" id="Q8B-Pg-v9l">
@@ -291,7 +298,7 @@
                         <sections>
                             <tableViewSection id="2Wi-F2-Gyj">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="HRj-jG-gWw" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="HRj-jG-gWw" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="320" height="161"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HRj-jG-gWw" id="rOL-Yx-fyW">
@@ -323,7 +330,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="zsf-Z6-ZLS" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="zsf-Z6-ZLS" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="225" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zsf-Z6-ZLS" id="s77-bO-Zj1">
@@ -351,7 +358,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="FeW-xJ-UtD" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="FeW-xJ-UtD" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="295" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FeW-xJ-UtD" id="hsY-Hb-yd4">
@@ -411,7 +418,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Mov-ND-ioo" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Mov-ND-ioo" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="395" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mov-ND-ioo" id="Agi-Ay-uRj">
@@ -471,7 +478,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="f90-4Q-Mco" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="f90-4Q-Mco" customClass="NutrientDetailTableViewCell" customModule="Lifesum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="495" width="320" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f90-4Q-Mco" id="f3m-RG-Nwv">

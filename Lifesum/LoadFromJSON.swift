@@ -21,7 +21,7 @@ class LoadFromJSON {
     func initialLoad(delegate: LoadJSONToCoreDelegate){
         // all the files to read from
         let staticFiles = ["exercisesStatic", "categoriesStatic", "foodStatic"]
-        //        let staticFiles = ["exercisesStatic"]
+
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let mainContext = appDelegate.managedObjectContext
 
@@ -31,6 +31,7 @@ class LoadFromJSON {
             print("loading...")
             
             // create private queue to load json into core data
+            // using a parent - child paradim
             let privateMOC = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
             privateMOC.parentContext = mainContext
             
@@ -72,6 +73,7 @@ class LoadFromJSON {
                                 
                                 appDelegate.saveContext()
                                 
+                                // dispatch call back in the main thread
                                 dispatch_async(dispatch_get_main_queue()) {
                                     delegate.dataLoaded?(delegateType)
                                 }
@@ -80,10 +82,6 @@ class LoadFromJSON {
                         } catch let error as NSError { print(error.localizedDescription)}
                     } else { print("invalid path name")}
                 }
-                
-                // save all the core data entities that were created
-//                appDelegate.saveContext()
-
             }
         }
     }
@@ -149,6 +147,8 @@ class LoadFromJSON {
             fetchRequest.predicate = NSPredicate(format: "servingsCategory == %d", servingCategory)
             
             // set relationship Many to Many (category & food)
+            // executing fetch for every food seems costly. maybe this is not necessary since
+            // the relationship can be built using predicate during fetch
             do{
                 let categories = try privateMOC.executeFetchRequest(fetchRequest) as! [Category]
                 if categories.count > 0{
